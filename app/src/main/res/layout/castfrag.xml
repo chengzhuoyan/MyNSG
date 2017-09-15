@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/www"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ff5001"
+        android:gravity="center"
+        android:text="购物车"
+        android:textColor="#fff"
+        android:textSize="17dp"></TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="false">
+
+        <ListView
+            android:id="@+id/cast_goods_listview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none"
+            android:layout_below="@+id/www"></ListView>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/ck_all"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:text="全选"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvshow1"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center"
+                android:text="共" />
+
+            <TextView
+                android:id="@+id/tvshow2"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="#ff5001" />
+
+            <TextView
+                android:id="@+id/tvshow3"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="件商品，共" />
+
+            <TextView
+                android:id="@+id/tvshow4"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="412592"
+                android:textColor="#ff5001" />
+
+            <TextView
+                android:id="@+id/tvshow5"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginRight="25dp"
+                android:gravity="center"
+                android:text="元" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/qujiesuan"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="2"
+            android:background="#ff5001"
+            android:gravity="center"
+            android:text="去结算"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

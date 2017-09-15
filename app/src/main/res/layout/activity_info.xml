@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.pc.xmnsg.activity.InfoActivity">
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <RadioButton
+            android:id="@+id/tab_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_ic_home"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@drawable/selector_text_color" />
+
+        <RadioButton
+            android:id="@+id/tab_class"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_ic_class"
+            android:gravity="center"
+            android:text="分类"
+            android:textColor="@drawable/selector_text_color" />
+
+        <RadioButton
+            android:id="@+id/tab_buy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_ic_buy"
+            android:gravity="center"
+            android:text="购物车"
+            android:textColor="@drawable/selector_text_color" />
+
+        <RadioButton
+            android:id="@+id/tab_me"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_ic_me"
+            android:gravity="center"
+            android:text="个人"
+            android:textColor="@drawable/selector_text_color" />
+
+
+    </RadioGroup>
+</LinearLayout>

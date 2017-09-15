@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/goods_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:id="@+id/goods_name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="20dp"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@id/goods_img"
+        android:text="safvdw" />
+
+    <TextView
+        android:id="@+id/goods_price"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/goods_name"
+        android:layout_toRightOf="@id/goods_img"
+        android:text="safvdw"
+        android:textColor="#ff5001" />
+
+    <TextView
+        android:id="@+id/goods_salenum"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/goods_name"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/goods_price"
+        android:text="safvdw"
+        android:textColor="#8c8c8b"
+        android:textSize="15dp" />
+
+</RelativeLayout>
